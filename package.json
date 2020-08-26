@@ -1,0 +1,55 @@
+{
+  "name": "koa_typescript_template",
+  "version": "1.0.0",
+  "description": "A project named koa_typescript_template",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha  --config test/.mocharc.json",
+    "dev": "node src/bin/dev",
+    "lint-fix": "eslint --ext .ts ./src --fix",
+    "lint": "eslint --ext .ts ./src"
+  },
+  "dependencies": {
+    "ajv": "^6.12.4",
+    "bluebird": "^3.7.2",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.4.0",
+    "koa-session": "^6.0.0",
+    "mongoose": "^5.10.0",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.32",
+    "@types/debug": "^4.1.5",
+    "@types/koa": "^2.11.4",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa-session": "^5.10.2",
+    "@types/mongoose": "^5.7.36",
+    "@types/node": "^14.6.0",
+    "@types/power-assert": "^1.5.3",
+    "@types/redis": "^2.8.26",
+    "@types/sinon": "^9.0.5",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-typescript": "^9.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5",
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.4",
+    "power-assert": "^1.6.1",
+    "sinon": "^9.0.3",
+    "string-random": "^0.1.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
